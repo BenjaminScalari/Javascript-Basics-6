@@ -1,0 +1,202 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex;
+}
+
+.flex-align {
+  align-items: center;
+}
+
+.flex-justify {
+  justify-content: center;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+/* .flex-end {
+  justify-content: flex-end;
+} */
+
+.flex-column {
+  flex-direction: column;
+}
+
+body {
+  /* font-family: 'Pokemon Emerald', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(230,240,250);
+  background: linear-gradient(0deg, rgba(230,240,250,1) 65%, rgba(104,179,246,1) 85%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#container {
+  /* border: 1px solid black; */
+  width: 85%;
+}
+
+h1 {
+  color: white;
+  font-size: 75px;
+  font-weight: 900;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  -webkit-text-stroke: 3px black;
+}
+
+h2 {
+  padding: 10px 0 10px 0;
+  font-size: 30px;
+}
+
+h2,
+.card-info,
+.h3-container {
+  text-align: center;
+}
+
+h3 {
+  width: 100%;
+  font-size: 20px;
+}
+
+h4 {
+  padding-bottom: 5px;
+  font-size: larger;
+}
+
+.poke-ball-logo,
+.logo-overlay {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-overlay {
+  background-color: white;
+  border-radius: 50px;
+}
+
+#cards-container,
+.box-recensione,
+.invia-recensione,
+footer p {
+  font-family: 'Pokemon Emerald', sans-serif;
+}
+
+#cards-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  flex-wrap: wrap;
+  color: rgb(50, 50, 50);
+}
+
+#cards-container a {
+  text-decoration: none;
+  color: black;
+  padding-bottom:25px;
+}
+
+.card,
+#recensione {
+  border: 5px solid black;
+  border-radius: 50px;
+  background: rgb(254,229,158);
+  background: linear-gradient(180deg, rgba(254,229,158,1) 40%, rgba(253,203,159,1) 55%);
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card::before,
+.card::after {
+    /* Contenuto generato dai pseudo-elementi */
+    content: "";
+    /* Posizionamento assoluto rispetto alla card */
+    position: absolute;
+    /* Spostamento verticale al centro */
+    top: 50%;
+    /* Centra il triangolo verticalmente */
+    transform: translateY(-50%);
+    /* Stile del bordo per creare i triangoli */
+    border-style: solid;
+    border-width: 10px;
+}
+
+.card::before {
+    /* Posiziona il triangolo a sinistra della card */
+    left: -10px;
+    /* Colore del bordo per il triangolo sinistro */
+    border-right-color: #000;
+    /* Ruota il triangolo di 45 gradi in senso antiorario */
+    transform: rotate(45deg);
+}
+
+.card::after {
+    /* Posiziona il triangolo a destra della card */
+    right: -10px;
+    /* Ruota il triangolo di 45 gradi in senso orario */
+    transform: rotate(-45deg);
+}
+
+.card:hover {
+    /* Effetto di ingrandimento su hover */
+    transform: scale(1.1);
+}
+
+.card-info,
+.h3-container {
+  width: 85%;
+}
+
+.card-info {
+  height: 60%;
+}
+
+#recensione {
+  width: 1000px;
+  height: 300px;
+}
+
+.recensione-info {
+  height: 100%;
+  width: 75%;
+}
+
+.box-recensione,
+.invia-recensione {
+  border-radius: 25px;
+}
+
+.box-recensione {
+  height: 100px;
+  width: 600px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.invia-recensione {
+  height: 25px;
+}
+
+footer {
+  padding: 50px 0;
+}
+

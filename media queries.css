@@ -1,0 +1,68 @@
+@media screen and (max-width: 413px) {
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  h3 {
+  font-size: 30px;
+  }
+
+.poke-ball-logo,
+.logo-overlay {
+  width: 75px;
+  height: 75px;
+}
+
+.card {
+  width: 125px;
+  height: 200px;
+}
+
+.card-info {
+  width: 111%;
+}
+
+.card img,
+.card-info h2 {
+  transform: scale(0.5);
+}
+
+.card-info h4 {
+  transform: scale(0.7);
+}
+
+.card-info p {
+  display: none;
+}
+
+#recensione {
+  transform: scale(0.5);
+  height: 1000px;
+  flex-direction: column;
+}
+
+.recensione-info {
+  height: 50%;
+  width: 100%;
+}
+
+.box-recensione {
+  height: 250px;
+  width: 500px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.invia-recensione {
+  height: 25px;
+}
+
+}

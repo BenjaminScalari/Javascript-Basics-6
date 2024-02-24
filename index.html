@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Market Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media queries.css">
+</head>
+
+<body class="flex flex-justify flex-align">
+
+  <!-- CONTENITORE GENERALE-->
+  <div id="container" class="flex flex-column flex-align flex-around">
+
+    <!-- CONTENITORE TITOLO -->
+    <div id="title" class="flex flex-justify flex-align">
+
+      <div class="logo-overlay">
+        <img src="assets/Poké_Ball_Logo.png" alt="Pokèmon-Market" class="poke-ball-logo">
+      </div>
+
+      <h1>Pokémon Market Online</h1>
+
+      <!-- <img src="assets/Logo.png" alt="PMO-Logo"> -->
+
+      <div class="logo-overlay">
+        <img src="assets/Poké_Ball_Logo.png" alt="Pokèmon-Market" class="poke-ball-logo">
+      </div>
+
+    </div>
+
+    <!-- CONTENITORE CARDS -->
+    <div id="cards-container" class="flex flex-around">
+
+      <!-- POKE BALL -->
+      <a href="https://wiki.pokemoncentral.it/Poké_Ball_(strumento)">
+        <div class="card flex flex-column flex-justify flex-align">
+
+          <img src="assets/Poké_Ball_Sprite.png" alt="Poké-Ball">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Poké Ball</h2>
+            <h4>200€</h4>
+            <p>Strumento dotato di capsula usato per catturare Pokémon selvatici. Si lancia contro il bersaglio come una palla.</p>
+          </div>
+  
+        </div>
+      </a>
+
+      <!-- POZIONE -->
+      <a href="https://wiki.pokemoncentral.it/Pozione">
+        <div class="card flex flex-column flex-justify flex-align">
+  
+          <img src="assets/Pozione_Sprite.png" alt="Pozione">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Pozione</h2>
+            <h4>300€</h4>
+            <p>Rimedio spray per le ferite. Restituisce 20 PS ad un Pokémon.</p>
+          </div>
+  
+        </div>
+      </a>
+
+      <!-- ANTIDOTO -->
+      <a href="https://wiki.pokemoncentral.it/Antidoto">
+        <div class="card flex flex-column flex-justify flex-align">
+  
+          <img src="assets/Antidoto_Sprite.png" alt="Antidoto">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Antidoto</h2>
+            <h4>100€</h4>
+            <p>Rimedio spray. Cura un Pokémon dall'avvelenamento.</p>
+          </div>
+  
+        </div>
+      </a>
+
+      <!-- ANTIPARALISI -->
+      <a href="https://wiki.pokemoncentral.it/Antiparalisi">
+        <div class="card flex flex-column flex-justify flex-align">
+  
+          <img src="assets/Antiparalisi_Sprite.png" alt="Antiparalisi">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Antiparalisi</h2>
+            <h4>200€</h4>
+            <p>Rimedio spray. Cura un Pokémon dalla paralisi.</p>
+          </div>
+  
+        </div>
+      </a>
+
+      <!-- FUNE DI FUGA -->
+      <a href="https://wiki.pokemoncentral.it/Fune_di_fuga">
+        <div class="card flex flex-column flex-justify flex-align">
+  
+          <img src="assets/Fune_di_fuga_Sprite.png" alt="Fune-di-Fuga">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Fune di Fuga</h2>
+            <h4>550€</h4>
+            <p>Corda lunga e resistente che si usa per fuggire in un batter d'occhio dalle grotte o da certi luoghi chiusi.</p>
+          </div>
+  
+        </div>
+      </a>
+
+      <!-- REPELLENTE -->
+      <!-- <a href="#">
+        <div class="card flex flex-column flex-justify flex-align">
+  
+          <img src="assets/Repellente_Sprite.png" alt="Repellente">
+  
+          <div class="card-info flex flex-column flex-align flex-evenly">
+            <h2>Repellente</h2>
+            <h4>350€</h4>
+            <p>Allontana i Pokémon selvatici aventi un livello minore del primo Pokémon della squadra per 100 passi dopo l'utilizzo.</p>
+          </div>
+  
+        </div>
+      </a> -->
+
+      <!-- RECENSIONE -->
+      <div id="recensione" class="flex flex-evenly flex-align">
+
+        <img src="assets/Revitalizzante_Sprite.png" id="recensione-img" alt="">
+
+        <div class="recensione-info flex flex-column flex-align flex-evenly">
+
+          <div class="h3-container flex flex-align flex-justify">
+            <h3>Dicci cosa ne pensi dei nostri Revitalizzanti. Se hai un momento libero, ci piacerebbe sentire la tua opinione sulla tua esperienza con il nostro nuovo prodotto.</h3>
+          </div>
+  
+          <form action="/submit_review" method="post" class="flex flex-column">
+            <textarea class="box-recensione"></textarea>
+            <input type="submit" value="Invia recensione" class="invia-recensione">
+           </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Silph S.p.A. Zafferanopoli.</p>
+      
+    </footer>
+  
+</body>
+
+<script src="script.js"></script>
+
+</html>
