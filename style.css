@@ -26,16 +26,23 @@
   justify-content: space-evenly;
 }
 
-/* .flex-end {
-  justify-content: flex-end;
-} */
-
 .flex-column {
   flex-direction: column;
 }
 
+/* DARK MODE */
+body.dark-mode {
+  background: rgb(66,66,66);
+  background: linear-gradient(0deg, rgba(66,66,66,1) 65%, rgba(70,123,169,1) 85%);
+  color: white;
+}
+
+/* TASTO NASCONDI-IMMAGINI */
+.hidden {
+  display: none;
+}
+
 body {
-  /* font-family: 'Pokemon Emerald', sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(230,240,250);
   background: linear-gradient(0deg, rgba(230,240,250,1) 65%, rgba(104,179,246,1) 85%);
@@ -44,7 +51,6 @@ body {
 }
 
 #container {
-  /* border: 1px solid black; */
   width: 85%;
 }
 
@@ -76,6 +82,11 @@ h3 {
 h4 {
   padding-bottom: 5px;
   font-size: larger;
+  color: black;
+}
+
+.price:hover {
+  color: black;
 }
 
 .poke-ball-logo,
@@ -89,6 +100,19 @@ h4 {
   border-radius: 50px;
 }
 
+#darkModeButton,
+#imgButton {
+width: 15%;
+height: 25px;
+}
+
+#darkModeButton {
+  background-color: rgb(66,66,66);
+  color: white;
+}
+
+#darkModeButton,
+#imgButton,
 #cards-container,
 .box-recensione,
 .invia-recensione,
@@ -97,7 +121,6 @@ footer p {
 }
 
 #cards-container {
-  /* border: 2px solid red; */
   width: 100%;
   flex-wrap: wrap;
   color: rgb(50, 50, 50);
@@ -124,39 +147,32 @@ footer p {
   overflow: hidden;
 }
 
+/* TRIANGOLI */
 .card::before,
 .card::after {
-    /* Contenuto generato dai pseudo-elementi */
     content: "";
-    /* Posizionamento assoluto rispetto alla card */
     position: absolute;
-    /* Spostamento verticale al centro */
     top: 50%;
-    /* Centra il triangolo verticalmente */
     transform: translateY(-50%);
-    /* Stile del bordo per creare i triangoli */
     border-style: solid;
     border-width: 10px;
 }
 
+/* SINISTRO */
 .card::before {
-    /* Posiziona il triangolo a sinistra della card */
     left: -10px;
-    /* Colore del bordo per il triangolo sinistro */
     border-right-color: #000;
-    /* Ruota il triangolo di 45 gradi in senso antiorario */
     transform: rotate(45deg);
 }
 
+/* DESTRO */
 .card::after {
-    /* Posiziona il triangolo a destra della card */
     right: -10px;
-    /* Ruota il triangolo di 45 gradi in senso orario */
     transform: rotate(-45deg);
 }
 
+/* EFFETTO INGRANDIMENTO CARDS */
 .card:hover {
-    /* Effetto di ingrandimento su hover */
     transform: scale(1.1);
 }
 
@@ -172,6 +188,7 @@ footer p {
 #recensione {
   width: 1000px;
   height: 300px;
+  color: black;
 }
 
 .recensione-info {
@@ -179,6 +196,8 @@ footer p {
   width: 75%;
 }
 
+#darkModeButton,
+#imgButton,
 .box-recensione,
 .invia-recensione {
   border-radius: 25px;

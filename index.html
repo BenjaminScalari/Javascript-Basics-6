@@ -21,15 +21,19 @@
         <img src="assets/Poké_Ball_Logo.png" alt="Pokèmon-Market" class="poke-ball-logo">
       </div>
 
-      <h1>Pokémon Market Online</h1>
-
-      <!-- <img src="assets/Logo.png" alt="PMO-Logo"> -->
+      <h1 id="titolo">Pokémon Market Online</h1>
 
       <div class="logo-overlay">
         <img src="assets/Poké_Ball_Logo.png" alt="Pokèmon-Market" class="poke-ball-logo">
       </div>
 
     </div>
+
+    <!-- TASTO DARK MODE -->
+    <button id="darkModeButton">Attiva Dark Mode</button>
+
+    <!-- TASTO NASCONDI-IMMAGINI -->
+    <button id="imgButton">Visibilità Immagini</button>
 
     <!-- CONTENITORE CARDS -->
     <div id="cards-container" class="flex flex-around">
@@ -42,7 +46,7 @@
   
           <div class="card-info flex flex-column flex-align flex-evenly">
             <h2>Poké Ball</h2>
-            <h4>200€</h4>
+            <h4 class="price">200€</h4>
             <p>Strumento dotato di capsula usato per catturare Pokémon selvatici. Si lancia contro il bersaglio come una palla.</p>
           </div>
   
@@ -57,7 +61,7 @@
   
           <div class="card-info flex flex-column flex-align flex-evenly">
             <h2>Pozione</h2>
-            <h4>300€</h4>
+            <h4 class="price">300€</h4>
             <p>Rimedio spray per le ferite. Restituisce 20 PS ad un Pokémon.</p>
           </div>
   
@@ -72,7 +76,7 @@
   
           <div class="card-info flex flex-column flex-align flex-evenly">
             <h2>Antidoto</h2>
-            <h4>100€</h4>
+            <h4 class="price">100€</h4>
             <p>Rimedio spray. Cura un Pokémon dall'avvelenamento.</p>
           </div>
   
@@ -87,7 +91,7 @@
   
           <div class="card-info flex flex-column flex-align flex-evenly">
             <h2>Antiparalisi</h2>
-            <h4>200€</h4>
+            <h4 class="price">200€</h4>
             <p>Rimedio spray. Cura un Pokémon dalla paralisi.</p>
           </div>
   
@@ -102,28 +106,16 @@
   
           <div class="card-info flex flex-column flex-align flex-evenly">
             <h2>Fune di Fuga</h2>
-            <h4>550€</h4>
+            <h4 class="price">550€</h4>
             <p>Corda lunga e resistente che si usa per fuggire in un batter d'occhio dalle grotte o da certi luoghi chiusi.</p>
           </div>
   
         </div>
       </a>
 
-      <!-- REPELLENTE -->
-      <!-- <a href="#">
-        <div class="card flex flex-column flex-justify flex-align">
-  
-          <img src="assets/Repellente_Sprite.png" alt="Repellente">
-  
-          <div class="card-info flex flex-column flex-align flex-evenly">
-            <h2>Repellente</h2>
-            <h4>350€</h4>
-            <p>Allontana i Pokémon selvatici aventi un livello minore del primo Pokémon della squadra per 100 passi dopo l'utilizzo.</p>
-          </div>
-  
-        </div>
-      </a> -->
+    </div>
 
+    
       <!-- RECENSIONE -->
       <div id="recensione" class="flex flex-evenly flex-align">
 
@@ -135,8 +127,8 @@
             <h3>Dicci cosa ne pensi dei nostri Revitalizzanti. Se hai un momento libero, ci piacerebbe sentire la tua opinione sulla tua esperienza con il nostro nuovo prodotto.</h3>
           </div>
   
-          <form action="/submit_review" method="post" class="flex flex-column">
-            <textarea class="box-recensione"></textarea>
+          <form action="/submit_review" method="post" class="flex flex-column" name="recensione">
+            <textarea class="box-recensione" name="recensione-box"></textarea>
             <input type="submit" value="Invia recensione" class="invia-recensione">
            </form>
 
@@ -144,11 +136,8 @@
 
       </div>
 
-    </div>
-
     <footer>
-      <p>&copy; 2024 Silph S.p.A. Zafferanopoli.</p>
-      
+      <p id="footerAddress">&copy; 2024 Silph S.p.A. Zafferanopoli.</p>
     </footer>
   
 </body>
