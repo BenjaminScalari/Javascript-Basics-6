@@ -61,11 +61,11 @@ let prices = document.querySelectorAll("h4");
 
 prices.forEach(function(price) {
   // CAMBIA COLORE TESTO
-    price.addEventListener("mouseenter", function() {
-        price.style.color = getRandomRGB();
-    });
-    // RIPRISTINA COLORE TESTO
-    price.addEventListener("mouseleave", function() {
-      price.style.color = "black";
+  price.addEventListener("mouseenter", function() {
+    price.style.color = getRandomRGB();
+  });
+  // RIPRISTINA COLORE TESTO
+  price.addEventListener("mouseleave", function() {
+    price.style.color = "black";
   });
 });
